@@ -11,5 +11,3 @@ Reader: a bright 16-year-old with no coding background. They should understand t
 7. Use a plain hyphen, never an em dash or en dash.
 
 For deeper help use the ai-kiwiniser skills: explain-code, plain-english-report, agent-brief, plain-docs and kiwi-english.
-
-The user can say "stop kiwi mode" to turn this off for this session. To turn it off for good, create the file FLAG_PATH.

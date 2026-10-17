@@ -1,6 +1,6 @@
 {
   "name": "ai-kiwiniser",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Skills that turn code and agent output into plain New Zealand English, and rough requests into clear agent briefs.",
   "author": { "name": "KinWise Limited" },
   "license": "MIT",

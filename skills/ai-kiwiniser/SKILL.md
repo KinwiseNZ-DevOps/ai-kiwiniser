@@ -97,8 +97,9 @@ Reason: a long list of steps invites skipped and half-understood steps, and an e
 
 Once the plugin is installed, a start-up hook adds the short rules in [always-on-rules.md](references/always-on-rules.md) to every Claude Code session, so the house style applies to every reply without anyone asking. It is on by default.
 
-- The user says "stop kiwi mode" to turn it off for the current session.
-- Creating the file `.ai-kiwiniser-off` in the Claude config folder (usually `~/.claude`) turns it off for good; deleting that file turns it back on.
+- It has three saved modes: `on` (default), `auto` (here the same as `on`, because the style helps everywhere) and `off`. The mode is one word in `~/.claude/.ai-kiwiniser.mode`; the user can ask Claude to set it, or edit the file. Deleting the file returns to `on`.
+- The user says "stop kiwi mode" to pause it for the current session, and "start kiwi mode" to resume.
+- The hook tells the user the current state at the start of every session.
 - Other agents without hooks can copy the rules file into their own instruction file (for example `AGENTS.md`).
 - The rules file is the single source for these rules; edit it, not a copy. Reason: the hook and the skills would drift apart otherwise.
 

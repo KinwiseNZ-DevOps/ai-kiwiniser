@@ -103,12 +103,18 @@ Or copy or symlink the `skills/` subfolders you want into your agent's skills di
 
 ### Always on
 
-In Claude Code the plugin loads a short ruleset into every session as soon as it is installed, so every reply follows the house style without you asking: plain words for a 16-year-old reader, 200 words at most, one step at a time for tutorials, and no claims without evidence. It costs roughly 350 tokens per session.
+In Claude Code, AI Kiwiniser loads a short ruleset into every session as soon as the plugin is installed (plain words for a 16-year-old reader, 200 words at most, one step at a time, no claims without evidence). It tells you its state at the start of each session and costs roughly 350 tokens.
 
-- Say **"stop kiwi mode"** to turn it off for the current session.
-- Create an empty file named `.ai-kiwiniser-off` in your Claude config folder (usually `~/.claude`) to turn it off for good. Delete the file to turn it back on.
+| Mode | What it does |
+|---|---|
+| `on` (default) | The rules apply in every session |
+| `auto` | The rules apply only in projects that look relevant: not applicable; the style is useful everywhere, so `auto` behaves like `on` |
+| `off` | The rules do not load |
+
+- Say **"stop kiwi mode"** to pause it for the current session, and **"start kiwi mode"** to resume.
+- Ask Claude to **set the saved mode to on, off or auto**. It writes that word into `~/.claude/.ai-kiwiniser.mode`. You can also edit that file yourself, and deleting it returns to the default (`on`).
 - It needs Node on the machine, because the start-up hook runs a small Node script. Without Node the hook quietly does nothing.
-- Other agents (Codex, Cursor, Copilot and so on) have no start-up hook here. Paste the contents of `skills/ai-kiwiniser/references/always-on-rules.md` into that agent's instruction file instead.
+- Other agents have no start-up hook here. Paste `skills/ai-kiwiniser/references/always-on-rules.md` into that agent's instruction file instead.
 
 <a id="usage"></a>
 ## 🚀 Usage
