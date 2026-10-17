@@ -1,16 +1,27 @@
 ```
-<Repo name rendered in the standard FIGlet ANSI Shadow font (pyfiglet "ansi_shadow"). One or two words per banner line, left-aligned with no indent, no trailing spaces, and no centring or widening.>
+ █████╗ ██╗
+██╔══██╗██║
+███████║██║
+██╔══██║██║
+██║  ██║██║
+╚═╝  ╚═╝╚═╝
+██╗  ██╗██╗██╗    ██╗██╗███╗   ██╗██╗███████╗███████╗██████╗
+██║ ██╔╝██║██║    ██║██║████╗  ██║██║██╔════╝██╔════╝██╔══██╗
+█████╔╝ ██║██║ █╗ ██║██║██╔██╗ ██║██║███████╗█████╗  ██████╔╝
+██╔═██╗ ██║██║███╗██║██║██║╚██╗██║██║╚════██║██╔══╝  ██╔══██╗
+██║  ██╗██║╚███╔███╔╝██║██║ ╚████║██║███████║███████╗██║  ██║
+╚═╝  ╚═╝╚═╝ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
 ```
 
 <div align="center">
 
-# ⚡ <Repo Name>
+# ⚡ AI Kiwiniser
 
-**<One line: what these skills do, for whom>**
+**Agent skills that turn coding and agent talk into plain New Zealand English, and rough requests into clear briefs for an agent.**
 
-[![Validate skills](https://github.com/<OWNER>/<REPO>/actions/workflows/validate.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/validate.yml)
+[![Validate skills](https://github.com/KinwiseNZ-DevOps/ai-kiwiniser/actions/workflows/validate.yml/badge.svg)](https://github.com/KinwiseNZ-DevOps/ai-kiwiniser/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Agent skills](https://img.shields.io/badge/agent_skills-1-8A2BE2)](https://agentskills.io)
+[![Agent skills](https://img.shields.io/badge/agent_skills-6-8A2BE2)](https://agentskills.io)
 [![Format](https://img.shields.io/badge/format-SKILL.md-orange)](https://agentskills.io/specification)
 [![Tooling](https://img.shields.io/badge/tooling-stdlib_only-success)](scripts/skills_tool.py)
 
@@ -22,7 +33,6 @@ Table of contents:
 - [How they fit together](#how-they-fit-together)
 - [Install](#install)
 - [Usage](#usage)
-- [Optional agent profiles](#optional-agent-profiles)
 - [Validate](#validate)
 - [Layout](#layout)
 - [Status and limits](#status-and-limits)
@@ -30,9 +40,9 @@ Table of contents:
 ---
 
 > [!IMPORTANT]
-> **Principle: <the single sentence every skill in this repo must obey.>**
+> **Principle: keep the facts exactly as the code or agent produced them, and make the words around them plain enough for the reader to act on.**
 
-<Two or three sentences: what problems the skills solve, what they are grounded in (official docs or authoritative sources), and that they follow the open [Agent Skills](https://agentskills.io/specification) format. Name the agents they work in, e.g. Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.>
+Coding agents and code are written for experts. These skills write for a bright 16-year-old with no coding background, so the idea, the context and the next step make sense on one read, without anyone working out what a word means. They help everyone else understand them: what a piece of code, an error or a change means, what an agent really did and did not check, and how to ask an agent for what you actually want. They use the plain-language tests in New Zealand's Plain Language Act 2022 (right for the audience, clear, concise, well organised), widely used plain-writing guidance, and New Zealand English conventions. They follow the open [Agent Skills](https://agentskills.io/specification) format and work in Claude Code, Codex, Cursor, Copilot, OpenCode or any SKILL.md-compatible agent.
 
 ---
 
@@ -42,7 +52,12 @@ Table of contents:
 <!-- catalogue:begin -->
 | Skill | Purpose |
 |---|---|
-| [`example-skill`](skills/example-skill/SKILL.md) | Placeholder skill demonstrating this repository's skill format: the gate, steps, hard rule phrasing and reference layout. |
+| [`agent-brief`](skills/agent-brief/SKILL.md) | Turns a person's rough request into a clear brief an AI agent can act on: the goal in their words, the context, constraints, what done looks like and what to leave alone, asking at most one question when the answer would change the work. |
+| [`ai-kiwiniser`](skills/ai-kiwiniser/SKILL.md) | Router and shared house style for turning coding and agent output into plain New Zealand English that a non-expert can follow, and rough human requests into clear briefs for an agent. |
+| [`explain-code`](skills/explain-code/SKILL.md) | Explains code, diffs, error messages, stack traces, logs, config and commands in plain New Zealand English for a reader with no coding background: what it does, why it matters, what could go wrong, and the next step. |
+| [`kiwi-english`](skills/kiwi-english/SKILL.md) | Applies plain-language writing and New Zealand English conventions to text: everyday word choice, short sentences, spelling, dates, numbers, currency, te reo Māori words and macrons, and acronym handling. |
+| [`plain-docs`](skills/plain-docs/SKILL.md) | Writes software documentation in plain New Zealand English that a bright 16-year-old can follow: it picks the right form (tutorial, how-to, reference or explanation), fixes the audience, goal and scope, agrees an outline, then writes and checks every claim against the real code. |
+| [`plain-english-report`](skills/plain-english-report/SKILL.md) | Turns an agent's plan, results, test run, status, commit message or pull request description into a short plain New Zealand English report: what happened, what it means, what the reader must decide, and what was not checked. |
 <!-- catalogue:end -->
 
 ---
@@ -52,13 +67,15 @@ Table of contents:
 
 ```mermaid
 flowchart TD
-    R["⚡ <router-skill><br/><what it routes and enforces>"]
-    R --> A["🔍 <skill-a><br/><one-line scope>"]
-    R --> B["🛠️ <skill-b><br/><one-line scope>"]
-    R --> C["✅ <skill-c><br/><one-line scope>"]
+    R["⚡ ai-kiwiniser<br/>routes the request and sets the house style"]
+    R --> A["🔍 explain-code<br/>code, errors, diffs, logs in plain words"]
+    R --> B["📋 plain-english-report<br/>agent results and plans as a short report"]
+    R --> C["✍️ agent-brief<br/>rough request to a clear brief"]
+    R --> E["📚 plain-docs<br/>guides, how-tos, tutorials, reference"]
+    R --> D["🥝 kiwi-english<br/>spelling, dates, macrons, plain words"]
 ```
 
-<One sentence on the order or priority in which the skills usually apply. Delete this section and the diagram for a repo with a single skill.>
+Start at the router. The other five skills share its house style, and `kiwi-english` is the final check on any text.
 
 ---
 
@@ -68,11 +85,11 @@ flowchart TD
 > [!TIP]
 > Install the router skill **plus every sibling skill it links to**; routers reference siblings by relative path.
 
-**Claude Code plugin** (installs the skills and any agent profiles together):
+**Claude Code plugin** (installs the skills together):
 
 ```text
-/plugin marketplace add <OWNER>/<REPO>
-/plugin install <PLUGIN-NAME>@<MARKETPLACE-NAME>
+/plugin marketplace add KinwiseNZ-DevOps/ai-kiwiniser
+/plugin install ai-kiwiniser@ai-kiwiniser-marketplace
 ```
 
 Or copy or symlink the `skills/` subfolders you want into your agent's skills directory:
@@ -82,39 +99,36 @@ Or copy or symlink the `skills/` subfolders you want into your agent's skills di
 | Claude Code | `~/.claude/skills/` or a project's `.claude/skills/` |
 | Codex · Cursor · Copilot · OpenCode · Windsurf | the agent's own SKILL.md discovery path |
 
-To install supplied Claude Code, GitHub Copilot or Codex profiles into a project, run `python scripts/install_agents.py --host claude-code --target PATH`. Each repo supplies one main workflow agent and may supply one helper per host. Other hosts receive the skills only. If no profile files are supplied for that host, it makes no changes.
-
 ---
 
 <a id="usage"></a>
 ## 🚀 Usage
 
 > [!TIP]
-> **You never need to memorise skill names.** Just describe the problem in plain words; the router picks the right skill automatically. But if you want short, reliable phrases that always work, use these:
+> **You never need to memorise skill names.** Describe what you want in plain words; the router picks the right skill. If you want short phrases that always work, use these:
 
 **The flow** (this is all most people need):
 
 ```text
-1. "<first phrase>"     → <what happens>
-2. "<second phrase>"    → <what happens>
-3. "<third phrase>"     → <what happens>
+1. "What does this do?"            → a plain explanation of the code, with the risks
+2. "Explain what the agent did"    → a short report: result, checked, not checked, your decision
+3. "Help me ask the agent for X"   → a clear brief you can send, with assumptions labelled
 ```
 
 **Short phrases that trigger each skill:**
 
 | Just say… | What you get | Skill used |
 |---|---|---|
-| `<short plain phrase>` | <what happens> | *<skill>* |
+| `What does this error mean?` | Meaning, likely cause, first thing to try | *explain-code* |
+| `Explain this change` | What it does, what could go wrong | *explain-code* |
+| `Summarise what you just did` | Outcome, what was checked, what to decide | *plain-english-report* |
+| `Write a commit message` | A short plain message that says why | *plain-english-report* |
+| `Turn this into instructions for an agent` | A brief with goal, limits and done-when | *agent-brief* |
+| `Write a how-to for this` | The right kind of document, outlined first, checked against the code | *plain-docs* |
+| `Make this plain NZ English` | Simpler wording, NZ spelling, dates and macrons | *kiwi-english* |
 
 > [!NOTE]
-> Skills also trigger on their own when your request matches. In Claude Code you can also invoke one explicitly with `/<skill-name>`, but the plain phrases above are shorter and work across every agent.
-
----
-
-<a id="optional-agent-profiles"></a>
-## Optional agent profiles
-
-This section applies only when agent definitions were supplied during setup. One main agent handles the repo's workflows through named modes, and an optional helper handles one distinct task. Profiles live under `resources/agents/<host>/`. Other hosts receive the skills only. If no agents were supplied, remove this section and let the skills run directly.
+> Skills also trigger on their own when your request matches. In Claude Code you can also invoke one explicitly with `/ai-kiwiniser`, but the plain phrases above are shorter and work across every agent.
 
 ---
 
@@ -125,7 +139,7 @@ This section applies only when agent definitions were supplied during setup. One
 python scripts/skills_tool.py check
 ```
 
-Checks: frontmatter, name/folder match, description length and trigger, body under 500 lines, every relative link resolves (including README.md and AGENTS.md), agent profile naming with no more than two profiles per host and exactly one `-workflow` main agent, agent `skills:` entries that exist and no `skills/<name>/SKILL.md` paths in agent bodies, plugin manifests (`.claude-plugin/plugin.json` and `marketplace.json`: required fields, licence matches `LICENSE`, `agents` lists every Claude Code profile, no top-level `agents/` folder), at least 3 eval cases per skill, catalogue freshness, no project-specific terms from `reference-content/strip-terms.txt`, and no em or en dashes in file names or in any text outside `reference-content/`. After the starter skill is deleted it also rejects leftover placeholders and setup-only paths that are tracked by Git or not ignored. Stdlib only, no dependencies.
+Checks: frontmatter, name/folder match, description length and trigger, body under 500 lines, every relative link resolves (including README.md and AGENTS.md), agent profile naming with no more than two profiles per host and exactly one `-workflow` main agent, agent `skills:` entries that exist and no `skills/<name>/SKILL.md` paths in agent bodies, plugin manifests (`.claude-plugin/plugin.json` and `marketplace.json`: required fields, licence matches `LICENSE`, `agents` lists every Claude Code profile, no top-level `agents/` folder), at least 3 eval cases per skill, catalogue freshness, no project-specific terms from `reference-content/strip-terms.txt`, and no em or en dashes in file names or in any text outside `reference-content/`. It also rejects leftover placeholders and setup-only paths that are tracked by Git or not ignored. Stdlib only, no dependencies.
 
 ---
 
@@ -139,14 +153,11 @@ Checks: frontmatter, name/folder match, description length and trigger, body und
 skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
 .claude-plugin/             plugin.json and marketplace.json (Claude Code plugin)
 evals/cases.jsonl           3+ behavioural cases per skill
-resources/agents/             optional host profiles copied by installer
-scripts/install_agents.py     copy optional agent profiles into a project
+resources/agents/           optional host profiles copied by installer
+scripts/install_agents.py   copy optional agent profiles into a project
 scripts/skills_tool.py      validate, regenerate catalogue (stdlib only)
 .github/workflows/          CI runs `skills_tool.py check` (free on public repos)
 AGENTS.md                   agent-facing rules for this repo
-SETUP.md                    local checklist; ignored and kept off GitHub
-reference-content/          private source material; ignored and kept off GitHub
-templates/                  local skill scaffolding; ignored and kept off GitHub
 ```
 
 </details>
@@ -157,13 +168,16 @@ templates/                  local skill scaffolding; ignored and kept off GitHub
 ## 📌 Status and limits
 
 > [!NOTE]
-> - <Known limits, each dated, mirroring the "Known deliberate states" section of AGENTS.md.>
+> - These skills translate and explain; they do not write or change code. Use the coding skills (for example `flutter-developer` and `django-api-architect`) for that.
+> - Several New Zealand conventions rest on secondary style guides because some official pages could not be fetched. The skill references say which, so check your own organisation's guide.
+> - Macron and te reo guidance follows the Māori Language Commission's approach as summarised by secondary sources; check Te Aka Māori Dictionary for spelling.
+> - No agent profiles are supplied; the skills run directly in any compatible agent.
 > - Licensed under MIT (see [LICENSE](LICENSE)).
 
 ---
 
 <div align="center">
 
-**⚡ Built on the [Agent Skills](https://agentskills.io) open format · grounded in <link to the official docs or sources>**
+**⚡ Built on the [Agent Skills](https://agentskills.io) open format · grounded in the [Plain Language Act 2022](https://www.legislation.govt.nz/act/public/2022/0054/latest/whole.html) and [plain-language guidance](https://digital.gov/guides/plain-language)**
 
 </div>

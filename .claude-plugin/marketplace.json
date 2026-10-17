@@ -1,12 +1,12 @@
 {
-  "name": "<MARKETPLACE-NAME>",
-  "owner": { "name": "<COPYRIGHT HOLDER>" },
-  "description": "<ONE SENTENCE: what this marketplace offers>",
+  "name": "ai-kiwiniser-marketplace",
+  "owner": { "name": "KinWise Limited" },
+  "description": "Plain New Zealand English skills for explaining code and agent output.",
   "plugins": [
     {
-      "name": "<PLUGIN-NAME>",
+      "name": "ai-kiwiniser",
       "source": "./",
-      "description": "<ONE SENTENCE: what the skills do, for whom>"
+      "description": "Skills that turn code and agent output into plain New Zealand English, and rough requests into clear agent briefs."
     }
   ]
 }

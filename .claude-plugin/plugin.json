@@ -1,9 +1,9 @@
 {
-  "name": "<PLUGIN-NAME>",
+  "name": "ai-kiwiniser",
   "version": "0.1.0",
-  "description": "<ONE SENTENCE: what the skills do, for whom>",
-  "author": { "name": "<COPYRIGHT HOLDER>" },
+  "description": "Skills that turn code and agent output into plain New Zealand English, and rough requests into clear agent briefs.",
+  "author": { "name": "KinWise Limited" },
   "license": "MIT",
-  "repository": "https://github.com/<OWNER>/<REPO>",
-  "keywords": ["agent-skills"]
+  "repository": "https://github.com/KinwiseNZ-DevOps/ai-kiwiniser",
+  "keywords": ["agent-skills", "plain-language", "new-zealand-english"]
 }
