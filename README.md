@@ -101,6 +101,15 @@ Or copy or symlink the `skills/` subfolders you want into your agent's skills di
 
 ---
 
+### Always on
+
+In Claude Code the plugin loads a short ruleset into every session as soon as it is installed, so every reply follows the house style without you asking: plain words for a 16-year-old reader, 200 words at most, one step at a time for tutorials, and no claims without evidence. It costs roughly 350 tokens per session.
+
+- Say **"stop kiwi mode"** to turn it off for the current session.
+- Create an empty file named `.ai-kiwiniser-off` in your Claude config folder (usually `~/.claude`) to turn it off for good. Delete the file to turn it back on.
+- It needs Node on the machine, because the start-up hook runs a small Node script. Without Node the hook quietly does nothing.
+- Other agents (Codex, Cursor, Copilot and so on) have no start-up hook here. Paste the contents of `skills/ai-kiwiniser/references/always-on-rules.md` into that agent's instruction file instead.
+
 <a id="usage"></a>
 ## 🚀 Usage
 
@@ -152,6 +161,7 @@ Checks: frontmatter, name/folder match, description length and trigger, body und
 ```
 skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
 .claude-plugin/             plugin.json and marketplace.json (Claude Code plugin)
+hooks/                      always-on start-up hook for Claude Code
 evals/cases.jsonl           3+ behavioural cases per skill
 resources/agents/           optional host profiles copied by installer
 scripts/install_agents.py   copy optional agent profiles into a project

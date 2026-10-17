@@ -93,7 +93,18 @@ Reason: a long list of steps invites skipped and half-understood steps, and an e
 - Never leave the reader to work out a word, a step or a reason. Mechanism: a reader who has to guess either guesses wrong or stops, and cannot tell you which.
 - Keep decisions with the reader. State the options and your pick, and let them choose. Mechanism: an agent that decides quietly removes the person's control.
 
+## Always-on mode
+
+Once the plugin is installed, a start-up hook adds the short rules in [always-on-rules.md](references/always-on-rules.md) to every Claude Code session, so the house style applies to every reply without anyone asking. It is on by default.
+
+- The user says "stop kiwi mode" to turn it off for the current session.
+- Creating the file `.ai-kiwiniser-off` in the Claude config folder (usually `~/.claude`) turns it off for good; deleting that file turns it back on.
+- Other agents without hooks can copy the rules file into their own instruction file (for example `AGENTS.md`).
+- The rules file is the single source for these rules; edit it, not a copy. Reason: the hook and the skills would drift apart otherwise.
+
 ## References
+
+- [always-on-rules.md](references/always-on-rules.md): the short ruleset the hook adds to every session.
 
 The detail lives in the specialist skills above; this skill holds the routing and the shared style.
 
