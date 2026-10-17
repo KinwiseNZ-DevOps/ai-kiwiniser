@@ -6,5 +6,9 @@
   "defaultMode": "on",
   "autoDetect": false,
   "autoMarkers": [],
-  "legacyOffFile": ".ai-kiwiniser-off"
+  "legacyOffFile": ".ai-kiwiniser-off",
+  "features": {
+    "linkGuard": true,
+    "styleGuard": true
+  }
 }

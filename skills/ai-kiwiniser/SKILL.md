@@ -100,6 +100,7 @@ Once the plugin is installed, a start-up hook adds the short rules in [always-on
 - It has three saved modes: `on` (default), `auto` (here the same as `on`, because the style helps everywhere) and `off`. The mode is one word in `~/.claude/.ai-kiwiniser.mode`; the user can ask Claude to set it, or edit the file. Deleting the file returns to `on`.
 - The user says "stop kiwi mode" to pause it for the current session, and "start kiwi mode" to resume.
 - The hook tells the user the current state at the start of every session.
+- The same hooks also run safety checks (risky commands, secrets, invented packages, licences, risky code patterns, suspicious pasted prompts, and a reminder when code changed but no checks ran). Each can be switched off in the features file described in the README, and none edits a file on its own.
 - Other agents without hooks can copy the rules file into their own instruction file (for example `AGENTS.md`).
 - The rules file is the single source for these rules; edit it, not a copy. Reason: the hook and the skills would drift apart otherwise.
 
