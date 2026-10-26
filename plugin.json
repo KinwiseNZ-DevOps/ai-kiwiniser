@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-kiwiniser",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Skills that turn code and agent output into plain New Zealand English, and rough requests into clear agent briefs.",
   "author": {
     "name": "KinWise Limited"
