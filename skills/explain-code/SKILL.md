@@ -13,6 +13,17 @@ description: >
 
 Stance: the code is the truth; the explanation is a faithful, simpler description of it. Frozen: every statement is backed by what you read. Flexible: how much detail, which analogy, and the order of the walkthrough.
 
+## Hard rules
+
+- Explain only what you read. Mechanism: confident claims about unread code are indistinguishable from truth, so the reader builds on them.
+- Mark inference. Use words like "probably" and "I have not run this" where they are true. Mechanism: plain wording sounds certain, so uncertainty has to be stated.
+- Do not paste large blocks of the original back. Quote the one line you are explaining. Mechanism: pasting the code again repeats the problem you are trying to remove.
+- Use an analogy only if it is accurate, and say where it stops fitting. Mechanism: a loose analogy gives the reader a wrong model that they then apply to the next problem.
+- Explain every term before you use it, so the reader never has to look one up or guess. Mechanism: one unexplained word early on makes the rest of the explanation unreadable to a newcomer.
+- Define a term once, in everyday words, and then use it consistently. Mechanism: swapping between two names for one thing makes the reader think there are two things.
+- Do not hide a security or data-loss risk to keep it simple. Say it plainly and early. Mechanism: the reader may act on a reassuring summary.
+- Do not change the code while explaining it. Mechanism: it becomes impossible to tell what was described from what was altered.
+
 ## Gate
 
 | Situation | Action |
@@ -36,17 +47,6 @@ Reason: a file name or a guess about what code probably does is the most common 
 5. **Finish with one next step**, or say nothing more is needed. Keep the whole answer to 200 words at most unless the reader asks for a full walkthrough, and offer that in one line.
 
 Templates for code, diffs, errors, logs, config and commands, with a worked example of each: [explain-patterns.md](references/explain-patterns.md).
-
-## Hard rules
-
-- Explain only what you read. Mechanism: confident claims about unread code are indistinguishable from truth, so the reader builds on them.
-- Mark inference. Use words like "probably" and "I have not run this" where they are true. Mechanism: plain wording sounds certain, so uncertainty has to be stated.
-- Do not paste large blocks of the original back. Quote the one line you are explaining. Mechanism: pasting the code again repeats the problem you are trying to remove.
-- Use an analogy only if it is accurate, and say where it stops fitting. Mechanism: a loose analogy gives the reader a wrong model that they then apply to the next problem.
-- Explain every term before you use it, so the reader never has to look one up or guess. Mechanism: one unexplained word early on makes the rest of the explanation unreadable to a newcomer.
-- Define a term once, in everyday words, and then use it consistently. Mechanism: swapping between two names for one thing makes the reader think there are two things.
-- Do not hide a security or data-loss risk to keep it simple. Say it plainly and early. Mechanism: the reader may act on a reassuring summary.
-- Do not change the code while explaining it. Mechanism: it becomes impossible to tell what was described from what was altered.
 
 ## References
 

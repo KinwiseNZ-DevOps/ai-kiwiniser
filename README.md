@@ -91,6 +91,10 @@ Start at the router. The other five skills share its house style, and `kiwi-engl
 /plugin marketplace add KinwiseNZ-DevOps/ai-kiwiniser
 /plugin install ai-kiwiniser@ai-kiwiniser-marketplace
 ```
+**ChatGPT desktop plugin** (local, skills and bundled hooks):
+
+This repo has a portable `plugin.json` manifest and a repo marketplace at `.agents/plugins/marketplace.json`. Open this repo as a trusted project and restart ChatGPT desktop, then install **AI Kiwiniser** from the Plugins Directory. Review and trust bundled hook scripts before they run.
+
 
 Or copy or symlink the `skills/` subfolders you want into your agent's skills directory:
 
@@ -107,12 +111,12 @@ In Claude Code, AI Kiwiniser loads a short ruleset into every session as soon as
 
 | Mode | What it does |
 |---|---|
-| `on` (default) | The rules apply in every session |
-| `auto` | The rules apply only in projects that look relevant: not applicable; the style is useful everywhere, so `auto` behaves like `on` |
+| `on` | The rules apply in every session |
+| `auto` (default) | The rules apply only in projects that look relevant: not applicable; the style is useful everywhere, so `auto` behaves like `on` |
 | `off` | The rules do not load |
 
 - Say **"stop kiwi mode"** to pause it for the current session, and **"start kiwi mode"** to resume.
-- Ask Claude to **set the saved mode to on, off or auto**. It writes that word into `~/.claude/.ai-kiwiniser.mode`. You can also edit that file yourself, and deleting it returns to the default (`on`).
+- Ask Claude to **set the saved mode to on, off or auto**. It writes that word into `~/.claude/.ai-kiwiniser.mode`. You can also edit that file yourself, and deleting it returns to the default (`auto`).
 - It needs Node on the machine, because the start-up hook runs a small Node script. Without Node the hook quietly does nothing.
 - Other agents have no start-up hook here. Paste `skills/ai-kiwiniser/references/always-on-rules.md` into that agent's instruction file instead.
 
@@ -191,6 +195,7 @@ skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
 .claude-plugin/             plugin.json and marketplace.json (Claude Code plugin)
 hooks/                      always-on rules and safety checks for Claude Code
 evals/cases.jsonl           3+ behavioural cases per skill
+evals/triggers.jsonl        triggering tests per skill: obvious, paraphrase, unrelated
 resources/agents/           optional host profiles copied by installer
 scripts/install_agents.py   copy optional agent profiles into a project
 scripts/skills_tool.py      validate, regenerate catalogue (stdlib only)

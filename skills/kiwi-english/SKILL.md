@@ -13,6 +13,18 @@ description: >
 
 Stance: meaning is fixed; wording and conventions change. Frozen: the facts in the text and any official name. Flexible: sentence shape, word choice and level of formality, which follow the reader.
 
+## Hard rules
+
+- Use New Zealand English spelling: -ise endings, colour, behaviour, centre. Mechanism: mixed spellings in one text look careless to the reader, and this repository's policy requires -ise.
+- Use a plain hyphen, never an em dash or en dash. Mechanism: a single, checkable rule is easier to hold than a style judgement.
+- Write dates as day, month, year with the month in words (18 October 2026), and the numeric form as dd/mm/yyyy. Mechanism: month-first dates are read differently by New Zealand readers, so 03/04 could be misread.
+- Spell out an abbreviation the first time, unless the reader certainly knows it. Mechanism: an unexplained abbreviation stops a non-expert at the first line.
+- Write te reo Māori words with correct macrons, do not italicise them, and do not add an "s" for a plural. Mechanism: a missing macron can change the word (keke and kēkē differ), and an added "s" is an English ending on a Māori word.
+- Leave personal, family, hapū and iwi names, and the titles of existing publications, as their owners wrote them. Mechanism: those spellings belong to their owners and are not ours to correct.
+- Avoid negative contractions in warnings and instructions: write "do not" and "cannot". Mechanism: a reader can misread "can't" as "can", and the cost of that mistake is highest in an instruction.
+- Do not use idioms or metaphors that hide the meaning (for example "going forward" or "hub"). Mechanism: figurative words need decoding, and readers with English as a second language lose the point.
+- Never change a number, a name or a quoted error message to make text read better. Mechanism: those are the facts the reader may search or act on.
+
 ## Gate
 
 | Situation | Action |
@@ -46,18 +58,6 @@ If any part fails, fix the text and not the reader. The reference gives worked r
 3. **Apply New Zealand conventions.** Spelling, dates, numbers, currency, acronyms, and te reo Māori words with macrons. Details are in the same reference.
 4. **Re-read for meaning.** Confirm nothing true was lost and no risk was removed.
 5. **Report only the changes that matter** if you were asked to review, not every tweak.
-
-## Hard rules
-
-- Use New Zealand English spelling: -ise endings, colour, behaviour, centre. Mechanism: mixed spellings in one text look careless to the reader, and this repository's policy requires -ise.
-- Use a plain hyphen, never an em dash or en dash. Mechanism: a single, checkable rule is easier to hold than a style judgement.
-- Write dates as day, month, year with the month in words (18 October 2026), and the numeric form as dd/mm/yyyy. Mechanism: month-first dates are read differently by New Zealand readers, so 03/04 could be misread.
-- Spell out an abbreviation the first time, unless the reader certainly knows it. Mechanism: an unexplained abbreviation stops a non-expert at the first line.
-- Write te reo Māori words with correct macrons, do not italicise them, and do not add an "s" for a plural. Mechanism: a missing macron can change the word (keke and kēkē differ), and an added "s" is an English ending on a Māori word.
-- Leave personal, family, hapū and iwi names, and the titles of existing publications, as their owners wrote them. Mechanism: those spellings belong to their owners and are not ours to correct.
-- Avoid negative contractions in warnings and instructions: write "do not" and "cannot". Mechanism: a reader can misread "can't" as "can", and the cost of that mistake is highest in an instruction.
-- Do not use idioms or metaphors that hide the meaning (for example "going forward" or "hub"). Mechanism: figurative words need decoding, and readers with English as a second language lose the point.
-- Never change a number, a name or a quoted error message to make text read better. Mechanism: those are the facts the reader may search or act on.
 
 ## References
 

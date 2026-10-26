@@ -14,6 +14,18 @@ description: >
 
 Stance: the person's intent is fixed; the wording is what improves. Frozen: the goal, their must-haves, and their limits. Flexible: structure, order and level of detail.
 
+## Hard rules
+
+- Keep the person's meaning. Mechanism: a tidier brief that quietly changes the goal sends the agent to the wrong place with full confidence.
+- Do not add requirements, scope or files the person did not ask for. Mechanism: invented requirements get built, reviewed and maintained.
+- Label every assumption as an assumption. Mechanism: an unlabelled guess in a brief becomes an instruction the agent follows.
+- State what done looks like in a way that can be checked. Mechanism: "make it better" cannot be verified, so the agent decides when to stop.
+- Say what to leave alone. Mechanism: without a boundary an agent will tidy and refactor beyond the task.
+- Ask one question at a time, never a questionnaire. Mechanism: long lists of questions are skipped or half-answered.
+- Do not paste secrets, passwords or private data into a brief. Mechanism: briefs are copied, logged and shared.
+- Show the brief to the person in plain words a bright 16-year-old could follow, and explain any technical term you add. Mechanism: the person must be able to check the brief is right, and cannot check wording they do not understand.
+- Keep it short. A good brief is usually a few lines per part. Mechanism: length buries the one constraint that matters.
+
 ## Gate
 
 | Situation | Action |
@@ -35,18 +47,6 @@ Reason: an over-asked person gives up on the agent, and an under-specified brief
 4. **Ask at most one question**, only if the answer changes the work, and offer a default ("Unless you say otherwise I will ...").
 5. **Write the brief** using the template in [brief-template.md](references/brief-template.md): goal, context, constraints, done when, leave alone, and open questions.
 6. **Show it** to the person in plain words and let them correct it before the agent starts, unless they asked you to go ahead.
-
-## Hard rules
-
-- Keep the person's meaning. Mechanism: a tidier brief that quietly changes the goal sends the agent to the wrong place with full confidence.
-- Do not add requirements, scope or files the person did not ask for. Mechanism: invented requirements get built, reviewed and maintained.
-- Label every assumption as an assumption. Mechanism: an unlabelled guess in a brief becomes an instruction the agent follows.
-- State what done looks like in a way that can be checked. Mechanism: "make it better" cannot be verified, so the agent decides when to stop.
-- Say what to leave alone. Mechanism: without a boundary an agent will tidy and refactor beyond the task.
-- Ask one question at a time, never a questionnaire. Mechanism: long lists of questions are skipped or half-answered.
-- Do not paste secrets, passwords or private data into a brief. Mechanism: briefs are copied, logged and shared.
-- Show the brief to the person in plain words a bright 16-year-old could follow, and explain any technical term you add. Mechanism: the person must be able to check the brief is right, and cannot check wording they do not understand.
-- Keep it short. A good brief is usually a few lines per part. Mechanism: length buries the one constraint that matters.
 
 ## References
 

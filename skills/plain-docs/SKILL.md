@@ -14,6 +14,18 @@ description: >
 
 Stance: a document serves one reader need at a time. Frozen: the form chosen, the facts checked against the code, and the plain-language standard. Flexible: the length of the document and the examples, which follow the reader's goal.
 
+## Hard rules
+
+- Choose one form per document. Mechanism: a tutorial that stops to explain theory, or a reference that tells a story, forces the reader to dig for what they came for.
+- Check every command, name and sample against the real code. Mechanism: a wrong command in a document is copied by every reader.
+- State what you could not check. Mechanism: unmarked guesses look the same as verified facts.
+- Agree the outline before writing a long document. Mechanism: a rewrite after the fact costs the reader's credits and patience, while a one-line outline check costs almost nothing.
+- Write a tutorial document as numbered steps, each a single action with what success looks like. Mechanism: the reader is following along, and a step that hides two actions gets half done. This is about the document; when teaching live in chat, give one step at a time and wait for confirmation.
+- Keep the chat reply to 200 words at most, unless the reader asks for an elaborate breakdown. Mechanism: the document is the deliverable, so the reply only needs to say where it is and what to check. The document itself can be as long as its form needs, but no longer.
+- Use consistent terms. Mechanism: two names for one thing make the reader think there are two things.
+- Do not copy content from other documents, and do not invent features, options or behaviour. Mechanism: copied text drifts from the code, and invented behaviour is a bug in the documentation.
+- Do not put secrets, real tokens or private data in examples. Mechanism: documents are shared and indexed.
+
 ## Gate
 
 | Situation | Action |
@@ -35,18 +47,6 @@ Reason: a document written from guesses is read as fact, and a document that mix
 4. **Write.** Follow the form's pattern. Use the project's existing documents for tone and terms, and do not copy their content unless asked. Write for a bright 16-year-old: point first, every term explained before use, context given, steps in order, nothing left to guess.
 5. **Check against the code.** Run or read every command, path, setting name and code sample. Mark anything you could not check.
 6. **Check the words** with [kiwi-english](../kiwi-english/SKILL.md), then report in 200 words or fewer: where the file is, what it covers, what was and was not checked.
-
-## Hard rules
-
-- Choose one form per document. Mechanism: a tutorial that stops to explain theory, or a reference that tells a story, forces the reader to dig for what they came for.
-- Check every command, name and sample against the real code. Mechanism: a wrong command in a document is copied by every reader.
-- State what you could not check. Mechanism: unmarked guesses look the same as verified facts.
-- Agree the outline before writing a long document. Mechanism: a rewrite after the fact costs the reader's credits and patience, while a one-line outline check costs almost nothing.
-- Write a tutorial document as numbered steps, each a single action with what success looks like. Mechanism: the reader is following along, and a step that hides two actions gets half done. This is about the document; when teaching live in chat, give one step at a time and wait for confirmation.
-- Keep the chat reply to 200 words at most, unless the reader asks for an elaborate breakdown. Mechanism: the document is the deliverable, so the reply only needs to say where it is and what to check. The document itself can be as long as its form needs, but no longer.
-- Use consistent terms. Mechanism: two names for one thing make the reader think there are two things.
-- Do not copy content from other documents, and do not invent features, options or behaviour. Mechanism: copied text drifts from the code, and invented behaviour is a bug in the documentation.
-- Do not put secrets, real tokens or private data in examples. Mechanism: documents are shared and indexed.
 
 ## References
 

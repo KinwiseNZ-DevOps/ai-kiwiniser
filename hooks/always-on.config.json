@@ -3,7 +3,7 @@
   "name": "AI Kiwiniser",
   "phrase": "kiwi",
   "rules": "skills/ai-kiwiniser/references/always-on-rules.md",
-  "defaultMode": "on",
+  "defaultMode": "auto",
   "autoDetect": false,
   "autoMarkers": [],
   "legacyOffFile": ".ai-kiwiniser-off",

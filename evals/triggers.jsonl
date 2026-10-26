@@ -1,0 +1,18 @@
+{"skill": "agent-brief", "type": "obvious", "query": "Turn my rough idea into clear instructions for an AI agent."}
+{"skill": "agent-brief", "type": "paraphrase", "query": "I want the agent to fix something on the site but I am not sure how to word the request."}
+{"skill": "agent-brief", "type": "unrelated", "query": "What does this error message mean?"}
+{"skill": "ai-kiwiniser", "type": "obvious", "query": "Explain this diff in plain New Zealand English."}
+{"skill": "ai-kiwiniser", "type": "paraphrase", "query": "The agent's report is full of jargon. Say it simply so I can decide."}
+{"skill": "ai-kiwiniser", "type": "unrelated", "query": "Write a Python function that sorts a list."}
+{"skill": "explain-code", "type": "obvious", "query": "What does this stack trace mean?"}
+{"skill": "explain-code", "type": "paraphrase", "query": "Can you tell me in simple words what this command does before I run it?"}
+{"skill": "explain-code", "type": "unrelated", "query": "Rewrite my agent's test report in plain English."}
+{"skill": "kiwi-english", "type": "obvious", "query": "Check this text for New Zealand English spelling, dates and te reo Māori macrons."}
+{"skill": "kiwi-english", "type": "paraphrase", "query": "How should I write the date and an amount of money for a New Zealand reader?"}
+{"skill": "kiwi-english", "type": "unrelated", "query": "Explain what this code does."}
+{"skill": "plain-docs", "type": "obvious", "query": "Write a README that a beginner can follow."}
+{"skill": "plain-docs", "type": "paraphrase", "query": "Our project guide is hard to read. Rewrite it as a clear step-by-step how-to."}
+{"skill": "plain-docs", "type": "unrelated", "query": "Explain this single function to me."}
+{"skill": "plain-english-report", "type": "obvious", "query": "Turn this agent's test run and status into a short report I can act on."}
+{"skill": "plain-english-report", "type": "paraphrase", "query": "The commit message and pull request description are too technical. Make them plain."}
+{"skill": "plain-english-report", "type": "unrelated", "query": "Write instructions for the agent to fix the login bug."}

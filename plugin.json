@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-kiwiniser",
+  "version": "0.4.1",
+  "description": "Skills that turn code and agent output into plain New Zealand English, and rough requests into clear agent briefs.",
+  "author": {
+    "name": "KinWise Limited"
+  },
+  "repository": "https://github.com/KinwiseNZ-DevOps/ai-kiwiniser",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "plain-language",
+    "new-zealand-english"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "AI Kiwiniser",
+        "shortDescription": "Skills that turn code and agent output into plain New Zealand English, and rough requests into...",
+        "longDescription": "Skills that turn code and agent output into plain New Zealand English, and rough requests into clear agent briefs.",
+        "developerName": "KinWise Limited",
+        "category": "Productivity"
+      }
+    }
+  }
+}

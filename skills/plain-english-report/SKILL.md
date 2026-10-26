@@ -14,6 +14,18 @@ description: >
 
 Stance: the report is a faithful, shorter view of the agent's work. Frozen: the outcome, the evidence, the risks and the open decisions. Flexible: wording, order within the report, and how much detail each part gets.
 
+## Hard rules
+
+- Put the outcome first. Mechanism: readers act on the first lines and may stop there.
+- Say exactly what was checked and what was skipped. Mechanism: "tests pass" without saying which tests hides that some did not run.
+- Do not write "successfully", "all done" or "fixed" without evidence you saw. Mechanism: an unqualified claim becomes the reader's belief and then a decision.
+- Keep the risks, even when the news is good. Mechanism: leaving out a limit makes the work look safer than it is.
+- Ask for a decision as one short question with your recommendation, not a list of open questions. Mechanism: several open questions stall the reader and invite a half-answer.
+- Write so a bright 16-year-old with no coding background could follow it on one read, without working out what a word or step means. Mechanism: the people who approve the work are often the least technical, and a report they cannot follow gets approved or rejected on trust.
+- Name things by what they are or do, and explain a technical term once. Mechanism: unexplained jargon makes the report unreadable for the people who must approve it.
+- Never invent work, test results or file names. Mechanism: the report is the reader's only view of what happened.
+- For commit messages and pull request text, lead with why the change exists, then what changed. Mechanism: reviewers need the reason before the detail, and the diff already shows the detail.
+
 ## Gate
 
 | Situation | Action |
@@ -38,18 +50,6 @@ Reason: a polished summary of unchecked work is more convincing than the work de
    - What I need from you (a single question with your pick), or "nothing needed".
 4. **Trim to 200 words at most**, unless the reader asked for an elaborate breakdown. Cut tool logs, file lists the reader does not need, and repeated points. Keep lists to about five items, grouped by meaning.
 5. **Check the words** with [kiwi-english](../kiwi-english/SKILL.md).
-
-## Hard rules
-
-- Put the outcome first. Mechanism: readers act on the first lines and may stop there.
-- Say exactly what was checked and what was skipped. Mechanism: "tests pass" without saying which tests hides that some did not run.
-- Do not write "successfully", "all done" or "fixed" without evidence you saw. Mechanism: an unqualified claim becomes the reader's belief and then a decision.
-- Keep the risks, even when the news is good. Mechanism: leaving out a limit makes the work look safer than it is.
-- Ask for a decision as one short question with your recommendation, not a list of open questions. Mechanism: several open questions stall the reader and invite a half-answer.
-- Write so a bright 16-year-old with no coding background could follow it on one read, without working out what a word or step means. Mechanism: the people who approve the work are often the least technical, and a report they cannot follow gets approved or rejected on trust.
-- Name things by what they are or do, and explain a technical term once. Mechanism: unexplained jargon makes the report unreadable for the people who must approve it.
-- Never invent work, test results or file names. Mechanism: the report is the reader's only view of what happened.
-- For commit messages and pull request text, lead with why the change exists, then what changed. Mechanism: reviewers need the reason before the detail, and the diff already shows the detail.
 
 ## References
 
