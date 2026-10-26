@@ -1,13 +1,12 @@
 ---
 name: plain-english-report
 description: >
-  Turns an agent's plan, results, test run, status, commit message or pull
-  request description into a short plain New Zealand English report: what
-  happened, what it means, what the reader must decide, and what was not
-  checked. Use when agent output is too technical, too long or hard to act on,
-  or when a close-out, summary or handover is needed. Do not use to explain a
-  piece of code (explain-code) or to write instructions for an agent
-  (agent-brief).
+  Use when agent output is too technical, too long or hard to act on, or when a
+  close-out, summary or handover is needed. Turns an agent's plan, results, test
+  run, status, commit message or pull request description into a short plain New
+  Zealand English report: what happened, what it means, what the reader must
+  decide, and what was not checked. Do not use to explain a piece of code
+  (explain-code) or to write instructions for an agent (agent-brief).
 ---
 
 # Plain English Report

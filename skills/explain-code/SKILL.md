@@ -1,12 +1,12 @@
 ---
 name: explain-code
 description: >
-  Explains code, diffs, error messages, stack traces, logs, config and commands
-  in plain New Zealand English for a reader with no coding background: what it
-  does, why it matters, what could go wrong, and the next step. Use when
-  someone asks what this code, error, change or command means, or asks for it
-  in simple words. Do not use for changing the code, or for summarising an
-  agent's own report (plain-english-report).
+  Use when someone asks what this code, error, change or command means, or asks
+  for it in simple words. Explains code, diffs, error messages, stack traces,
+  logs, config and commands in plain New Zealand English for a reader with no
+  coding background: what it does, why it matters, what could go wrong, and the
+  next step. Do not use for changing the code, or for summarising an agent's own
+  report (plain-english-report).
 ---
 
 # Explain Code

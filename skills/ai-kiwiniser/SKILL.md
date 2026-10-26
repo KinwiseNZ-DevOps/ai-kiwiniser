@@ -1,12 +1,12 @@
 ---
 name: ai-kiwiniser
 description: >
-  Router and shared house style for turning coding and agent output into plain
-  New Zealand English that a non-expert can follow, and rough human requests
-  into clear briefs for an agent. Use when someone asks what code, an error, a
-  diff or an agent's report means, when agent output needs rewriting in
-  everyday words, or when a request must be turned into agent instructions. Do
-  not use for writing or changing the code itself.
+  Use when someone asks what code, an error, a diff or an agent's report means,
+  when agent output needs rewriting in everyday words, or when a request must be
+  turned into agent instructions. Router and shared house style for turning
+  coding and agent output into plain New Zealand English that a non-expert can
+  follow, and rough human requests into clear briefs for an agent. Do not use
+  for writing or changing the code itself.
 ---
 
 # AI Kiwiniser

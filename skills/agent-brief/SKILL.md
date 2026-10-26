@@ -1,13 +1,13 @@
 ---
 name: agent-brief
 description: >
-  Turns a person's rough request into a clear brief an AI agent can act on:
-  the goal in their words, the context, constraints, what done looks like and
-  what to leave alone, asking at most one question when the answer would change
-  the work. Use when a request is vague, when someone wants to give an agent
-  instructions but is not sure how to word them, or when a prompt needs
-  tightening without changing its intent. Do not use to do the task itself, or
-  to explain an agent's output (plain-english-report).
+  Use when a request is vague, when someone wants to give an agent instructions
+  but is not sure how to word them, or when a prompt needs tightening without
+  changing its intent. Turns a person's rough request into a clear brief an AI
+  agent can act on: the goal in their words, the context, constraints, what done
+  looks like and what to leave alone, asking at most one question when the
+  answer would change the work. Do not use to do the task itself, or to explain
+  an agent's output (plain-english-report).
 ---
 
 # Agent Brief

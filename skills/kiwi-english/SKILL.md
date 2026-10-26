@@ -1,12 +1,12 @@
 ---
 name: kiwi-english
 description: >
-  Applies plain-language writing and New Zealand English conventions to text:
-  everyday word choice, short sentences, spelling, dates, numbers, currency,
-  te reo Māori words and macrons, and acronym handling. Use when writing or
-  checking text for New Zealand readers, simplifying wording, or deciding how to
-  write a date, an amount or a Māori word. Do not use to explain code
-  (explain-code) or to change the meaning of the text.
+  Use when writing or checking text for New Zealand readers, simplifying
+  wording, or deciding how to write a date, an amount or a Māori word. Applies
+  plain-language writing and New Zealand English conventions to text: everyday
+  word choice, short sentences, spelling, dates, numbers, currency, te reo Māori
+  words and macrons, and acronym handling. Do not use to explain code (explain-
+  code) or to change the meaning of the text.
 ---
 
 # Kiwi English

@@ -1,13 +1,13 @@
 ---
 name: plain-docs
 description: >
-  Writes software documentation in plain New Zealand English that a bright
-  16-year-old can follow: it picks the right form (tutorial, how-to, reference
-  or explanation), fixes the audience, goal and scope, agrees an outline, then
-  writes and checks every claim against the real code. Use when asked to write,
-  rewrite or review a README, guide, how-to, tutorial, reference page or
-  explanation. Do not use to explain a single piece of code in chat
-  (explain-code) or to change the code.
+  Use when asked to write, rewrite or review a README, guide, how-to, tutorial,
+  reference page or explanation. Writes software documentation in plain New
+  Zealand English that a bright 16-year-old can follow: it picks the right form
+  (tutorial, how-to, reference or explanation), fixes the audience, goal and
+  scope, agrees an outline, then writes and checks every claim against the real
+  code. Do not use to explain a single piece of code in chat (explain-code) or
+  to change the code.
 ---
 
 # Plain Docs
