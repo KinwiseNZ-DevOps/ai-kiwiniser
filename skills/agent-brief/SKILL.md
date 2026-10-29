@@ -25,6 +25,7 @@ Stance: the person's intent is fixed; the wording is what improves. Frozen: the 
 - Do not paste secrets, passwords or private data into a brief. Mechanism: briefs are copied, logged and shared.
 - Show the brief to the person in plain words a bright 16-year-old could follow, and explain any technical term you add. Mechanism: the person must be able to check the brief is right, and cannot check wording they do not understand.
 - Keep it short. A good brief is usually a few lines per part. Mechanism: length buries the one constraint that matters.
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
 
 ## Gate
 

@@ -25,6 +25,7 @@ Stance: a document serves one reader need at a time. Frozen: the form chosen, th
 - Use consistent terms. Mechanism: two names for one thing make the reader think there are two things.
 - Do not copy content from other documents, and do not invent features, options or behaviour. Mechanism: copied text drifts from the code, and invented behaviour is a bug in the documentation.
 - Do not put secrets, real tokens or private data in examples. Mechanism: documents are shared and indexed.
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
 
 ## Gate
 

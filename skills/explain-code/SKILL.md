@@ -23,6 +23,7 @@ Stance: the code is the truth; the explanation is a faithful, simpler descriptio
 - Define a term once, in everyday words, and then use it consistently. Mechanism: swapping between two names for one thing makes the reader think there are two things.
 - Do not hide a security or data-loss risk to keep it simple. Say it plainly and early. Mechanism: the reader may act on a reassuring summary.
 - Do not change the code while explaining it. Mechanism: it becomes impossible to tell what was described from what was altered.
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
 
 ## Gate
 

@@ -24,6 +24,7 @@ Stance: the report is a faithful, shorter view of the agent's work. Frozen: the 
 - Name things by what they are or do, and explain a technical term once. Mechanism: unexplained jargon makes the report unreadable for the people who must approve it.
 - Never invent work, test results or file names. Mechanism: the report is the reader's only view of what happened.
 - For commit messages and pull request text, lead with why the change exists, then what changed. Mechanism: reviewers need the reason before the detail, and the diff already shows the detail.
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
 
 ## Gate
 

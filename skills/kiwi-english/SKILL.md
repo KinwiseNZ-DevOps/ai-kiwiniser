@@ -24,6 +24,7 @@ Stance: meaning is fixed; wording and conventions change. Frozen: the facts in t
 - Avoid negative contractions in warnings and instructions: write "do not" and "cannot". Mechanism: a reader can misread "can't" as "can", and the cost of that mistake is highest in an instruction.
 - Do not use idioms or metaphors that hide the meaning (for example "going forward" or "hub"). Mechanism: figurative words need decoding, and readers with English as a second language lose the point.
 - Never change a number, a name or a quoted error message to make text read better. Mechanism: those are the facts the reader may search or act on.
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
 
 ## Gate
 
