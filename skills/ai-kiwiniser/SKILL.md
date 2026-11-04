@@ -95,6 +95,20 @@ Reason: a long list of steps invites skipped and half-understood steps, and an e
 - Keep every reply to 200 words at most, unless the reader asks for an elaborate breakdown. If more depth would help, offer it in one line instead of writing it.
 - When the reader must do something themselves, follow the tutorial rule above: one step, then wait for them to say it is done.
 
+## Works with other repos
+
+Marketing and document-writing repos depend on each other.
+
+| Repo or skill | Relationship | Hand off when |
+|---|---|---|
+| kinwise-marketing | Both ways | Marketing copy, positioning or claims need plain New Zealand English. This repo supplies the style; marketing supplies the facts and brand rules. |
+| kinwise-newsletters | Both ways | A newsletter draft needs a plain-language pass. This repo supplies the style; newsletters own consent, layout and sending. |
+| nz-legal-specialist | Both ways | Plain-language rewrites of legal text must keep the legal meaning; the legal specialist checks it. |
+
+If a companion plugin is not installed, say the hand-off was skipped. Never edit another repo's code or rules from here.
+
+The full map is in `skills-repos-dependency-map.md` beside the repos.
+
 ## Always-on mode
 
 A start-up hook adds [always-on-rules.md](references/always-on-rules.md) to every Claude Code session, so the house style applies to every reply. It is the single source of those rules, so edit it, not a copy. Say "stop kiwi mode" to pause it or "start kiwi mode" to resume. The README covers the saved mode, the safety checks, and how other agents can copy the rules file into their own instructions.

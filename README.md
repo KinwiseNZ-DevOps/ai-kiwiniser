@@ -35,6 +35,7 @@ Table of contents:
 - [Usage](#usage)
 - [Validate](#validate)
 - [Layout](#layout)
+- [Works with other repos](#works-with)
 - [Status and limits](#status-and-limits)
 
 ---
@@ -204,6 +205,13 @@ AGENTS.md                   agent-facing rules for this repo
 ```
 
 </details>
+
+---
+
+<a id="works-with"></a>
+## 🤝 Works with other repos
+
+Marketing and document-writing repos depend on each other. See the Works with other repos section of the router skill for when to hand off. The dependency map is `skills-repos-dependency-map.md` beside the repos.
 
 ---
 
